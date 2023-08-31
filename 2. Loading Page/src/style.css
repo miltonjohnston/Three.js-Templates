@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+#blocker {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0);
+    background: url(/textures/background/1.jpg);
+    background-size: 100% 100%;
+}
+
+#instructions {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#instructions p {
+    color: white;
+    font-size: 10vw;
+    filter: drop-shadow(2px 2px 10px white);
+}
+
+.progress {
+    position: absolute;
+    bottom: 20vh;
+    width: 80vw;
+    height: 10px;
+    border-radius: 10px;
+    left: 10vw;
+    background-color: rgba(90, 90, 90, 0.555);
+}
+
+.progress .progressbar {
+    display: block;
+    width: 0;
+    height: 10px;
+    border-radius: 10px;
+    background-color: violet;
+    transition: width 0.1s 0.3s linear;
+}
+
+.buttonload {
+    background-color: #00000000; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 24px; /* Some padding */
+    font-size: 100px; /* Set a font-size */
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5vh;
+}
+
+.buttonload i {
+    font-size: 80px;
+}
+
+/* Add a right margin to each icon */
+.fa {
+    margin-left: -12px;
+    margin-right: 8px;
+}
