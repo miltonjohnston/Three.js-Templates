@@ -1,4 +1,4 @@
-# <p style="text-align: center; font-size: 50px">Three.js Template</p>
+# <p style="text-align: center; font-size: 50px">Texture</p>
 
 ## Contents
 Simple texture control.

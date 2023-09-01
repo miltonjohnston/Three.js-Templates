@@ -1,4 +1,4 @@
-# <p style="text-align: center; font-size: 50px">Three.js Template</p>
+# <p style="text-align: center; font-size: 50px">Bloom</p>
 
 ## Contents
 Bloom effect to specific model and children.

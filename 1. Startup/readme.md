@@ -1,4 +1,4 @@
-# <p style="text-align: center;">Three.js Template</p>
+# <p style="text-align: center;">Startup</p>
 
 ## Content
 This is simple structure for starting three.js project!!!
