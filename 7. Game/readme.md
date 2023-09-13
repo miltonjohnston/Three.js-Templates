@@ -1,14 +1,9 @@
-# <p style="text-align: center;">Three.js Template</p>
+# <p style="text-align: center;">Game</p>
 
-## Contents
-1. Startup
-2. Loading Page
-3. Bloom Effect
-4. Outline Effect
-5. Animation Control
-6. Texture Control  
-7. Third Person Control
-__... ... ...__
+## Content
+This is a simple character game.
+Support FPS and TPS, and also using octree for physics.
+
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
