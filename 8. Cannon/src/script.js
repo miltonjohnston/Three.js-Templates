@@ -46,17 +46,30 @@ const dracoLoader = new DRACOLoader();
 dracoLoader.setDecoderPath("/draco/");
 gltfLoader.setDRACOLoader(dracoLoader);
 
-gltfLoader.load("/models/street.glb", (gltf) => {
+gltfLoader.load("/models/temp.glb", (gltf) => {
     const model = gltf.scene;
     scene.add(model);
 
-    model.traverse(function (node) {
+    street.traverse(function (node) {
         if (node.isMesh) {
             const geometry = node.geometry;
             const positionAttribute = geometry.attributes.position;
 
+            const scale = node.scale; // Get the scale of the mesh node
+
+            // Apply the scale to the position attribute during trimesh creation
+            const scaledPositionArray = [];
+            const positionArray = positionAttribute.array;
+            for (let i = 0; i < positionArray.length; i += 3) {
+                const x = positionArray[i] * scale.x;
+                const y = positionArray[i + 1] * scale.y;
+                const z = positionArray[i + 2] * scale.z;
+                scaledPositionArray.push(x, y, z);
+            }
+
+            // Create the trimesh with the scaled position array
             const trimesh = new CANNON.Trimesh(
-                positionAttribute.array,
+                scaledPositionArray,
                 geometry.index ? geometry.index.array : undefined
             );
 
