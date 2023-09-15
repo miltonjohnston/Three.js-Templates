@@ -1,15 +1,8 @@
-# <p style="text-align: center;">Three.js Template</p>
+# <p style="text-align: center;">Cannon</p>
 
-## Contents
-1. Startup
-2. Loading Page
-3. Bloom Effect
-4. Outline Effect
-5. Animation Control
-6. Texture Control  
-7. Third Person Control
-8. CANNON World
-__... ... ...__
+## Content
+Physics world using cannon. Any glb model can be physics
+
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
